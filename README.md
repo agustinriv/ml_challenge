@@ -5,7 +5,8 @@
 ### Pipelines
 - training.py: pipeline de entrenamiento, lee los datos desde PostgreSQL
 - training_github.py: versión alternativa de training el cual lee los datos desde archivo CSV
-- scoring.py
+- scoring.py: pipeline de scoring, lee los datos desde PostgreSQL
+- scoring_github.py: versión alternativa de scoring el cual lee los datos desde archivo CSV
 
 ### Notebooks
 - eda.ipynb: exploración de datos inicial
@@ -31,7 +32,7 @@ El modelo con mejor desempeño fue XGBoost, con un R² de 0.8817 y un RMSE de 42
 1) Crear un entorno virtual e instalar dependencias
 2) Subir dataset a PostgreSQL. Ejecutar setup.ipynb para crear la tabla en la base de datos local
 3) Ejecutar el script de entrenamiento desde la terminal (python Pipelines/training.py)
-4) Ejecutar el script de entrenamiento desde la terminal (python Pipelines/scoring.py)
+4) Ejecutar el script de scoring desde la terminal (python Pipelines/scoring.py)
 5) En caso de preferir no utilizar PostgreSQL, hay dos pipelines alternativos que toman los datos directamente del csv guardado en el repositorio. Estos pipelines se encuentran como training_github.py y scoring_github.py
 
 ## Consideraciones finales
@@ -46,7 +47,7 @@ Si bien no se implementó una imagen Docker, el enfoque podría ser:
 
 Crear un archivo Docker File en el repositorio que contenga las instrucciones necesarias para  contruir un Docker Image del proyecto y luego correrlo. Este contenedor tendría los archivos del proyecto, tendría instaladas las dependencias listadas en requirements, y estaria configurado para que corra primero el pipeline de entrenamiento y luego el de scoring.
 
-Crear un Docker Image permitiria ejecutar el proceso completo de forma reproducible, independientement del entorno local del usuario.
+Crear un Docker Image permitiria ejecutar el proceso completo de forma reproducible, independientemente del entorno local del usuario.
 
 
 ### Conclusiones
