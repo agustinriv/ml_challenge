@@ -1,0 +1,11 @@
+age,sex,bmi,children,smoker,region,charges,predicted_charges
+45,female,25.175,2,no,northeast,9095.06825,10799.731
+36,female,30.02,0,no,northwest,5272.1758,5953.2573
+64,female,26.885,0,yes,northwest,29330.98315,28139.39
+46,male,25.745,3,no,northwest,9301.89355,9309.178
+19,male,31.92,0,yes,northwest,33750.2918,34653.316
+34,male,42.9,1,no,southwest,4536.259,5312.5986
+19,female,22.515,0,no,northwest,2117.33885,2493.903
+64,male,37.905,0,no,northwest,14210.53595,16002.473
+28,female,17.29,0,no,northeast,3732.6251,5166.4194
+49,male,28.69,3,no,northwest,10264.4421,10676.375
