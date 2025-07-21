@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from xgboost import XGBRegressor
 
 # Cargo datos directamente del csv
-df = pd.read_csv("dataset/dataset.csv")
+df = pd.read_csv("Dataset/dataset.csv")
 
 # Variable Target
 X = df.drop('charges', axis=1)
