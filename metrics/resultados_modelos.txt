@@ -1,0 +1,5 @@
+Evaluación de modelos
+          Modelo                                                                                params        RMSE       R2
+    RandomForest {'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 25, 'n_estimators': 100} 4416.290786 0.874372
+GradientBoosting                          {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100} 4540.389913 0.867212
+         XGBoost                          {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100} 4285.227092 0.881718
